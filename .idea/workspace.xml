@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38347684-1481-4e84-957d-b17fe9499e6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/UserDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671516580267</updated>
       <workItem from="1671516581780" duration="2907000" />
-      <workItem from="1671519908307" duration="9157000" />
+      <workItem from="1671519908307" duration="11075000" />
     </task>
     <task id="LOCAL-00001" summary="Add spring MVC">
       <created>1671519359725</created>
@@ -205,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671532898733</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create Data base">
+      <created>1671533545621</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671533545621</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix schema.sql">
+      <created>1671533841546</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671533841546</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +232,8 @@
     <MESSAGE value="Fall back to JDBC" />
     <MESSAGE value="thread local" />
     <MESSAGE value="Create DAO Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create DAO Factory" />
+    <MESSAGE value="Create Data base" />
+    <MESSAGE value="fix schema.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix schema.sql" />
   </component>
 </project>

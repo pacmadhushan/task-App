@@ -17,11 +17,8 @@ import java.util.Optional;
 public class UserController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json")
-    public void createUserAccount(@Valid @RequestBody UserDTO user, Errors errors){
-        Optional<FieldError> firstError = errors.getFieldErrors().stream().findFirst();
-        if (firstError.isPresent()){
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,firstError.get().getDefaultMessage());
-        }
+    public void createUserAccount(@Valid @RequestBody UserDTO user){
+
 
     }
     @PatchMapping("/me")

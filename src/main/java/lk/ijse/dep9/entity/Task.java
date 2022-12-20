@@ -12,11 +12,11 @@ import javax.persistence.*;
 public class Task implements SuperEntity {
 
     private int id;
-    private Status content;
+    private String content;
     private Status status;
     private int projectId;
 
-    public Task(Status content, Status status, int projectId) {
+    public Task(String content, Status status, int projectId) {
         this.content = content;
         this.status = status;
         this.projectId = projectId;

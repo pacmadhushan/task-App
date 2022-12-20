@@ -43,6 +43,7 @@ public class ProjectDAOImpl implements ProjectDAO {
             stm.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+
         }
     }
 

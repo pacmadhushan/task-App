@@ -8,15 +8,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class User implements SuperEntity {
-    @Id
+
     String username;
-    @Column(nullable = false)
     String password;
-    @Column(name = "full_name",nullable = false)
     String fullName;
 }

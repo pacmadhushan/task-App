@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38347684-1481-4e84-957d-b17fe9499e6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/WebRootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dao/custom/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dao/custom/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dao/custom/impl/ProjectDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dao/custom/impl/ProjectDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dao/custom/impl/TaskDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dao/custom/impl/TaskDAOImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +175,7 @@
       <workItem from="1671519908307" duration="20067000" />
       <workItem from="1671586817614" duration="6485000" />
       <workItem from="1671609229353" duration="2643000" />
-      <workItem from="1671612048606" duration="7546000" />
+      <workItem from="1671612048606" duration="9650000" />
     </task>
     <task id="LOCAL-00001" summary="Add spring MVC">
       <created>1671519359725</created>

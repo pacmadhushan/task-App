@@ -20,6 +20,8 @@ public class TaskDAOImpl implements TaskDAO {
 
     @Override
     public Task save(Task task) {
+        new Genarated
+
         try {
             PreparedStatement stm = connection.prepareStatement("INSERT INTO Task (content, status, project_id) VALUES (?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
             stm.setString(1, task.getContent());
@@ -99,6 +101,8 @@ public class TaskDAOImpl implements TaskDAO {
 
     @Override
     public long count() {
+
+
         try {
             PreparedStatement stm = connection.prepareStatement("SELECT COUNT(id) FROM Task");
             ResultSet rst = stm.executeQuery();

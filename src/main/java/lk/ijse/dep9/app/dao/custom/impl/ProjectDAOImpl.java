@@ -2,6 +2,7 @@ package lk.ijse.dep9.app.dao.custom.impl;
 
 import lk.ijse.dep9.app.dao.custom.ProjectDAO;
 import lk.ijse.dep9.app.entity.Project;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -11,42 +12,56 @@ import java.util.Optional;
 
 @Component
 public class ProjectDAOImpl implements ProjectDAO {
+    private final JdbcTemplate jdbc;
 
-    private final Connection connection;
-
-    public ProjectDAOImpl(Connection connection) {
-        this.connection = connection;
+    public ProjectDAOImpl(JdbcTemplate jdbc) {
+        this.jdbc = jdbc;
     }
 
     @Override
     public Project save(Project project) {
-        try {
-            PreparedStatement stm = connection.prepareStatement("INSERT INTO Project (name, username) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);
-            stm.setString(1, project.getName());
-            stm.setString(2, project.getUsername());
-            stm.executeUpdate();
-            ResultSet generatedKeys = stm.getGeneratedKeys();
-            generatedKeys.next();
-            project.setId(generatedKeys.getInt(1));
-            return project;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        jdbc.update(con -> {
+                    PreparedStatement stm = con.pr("INSERT INTO Project (name, username) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);
+//            stm.setString(1, project.getName());
+//            stm.setString(2, project.getUsername());
+//            stm.executeUpdate();
+                }"INSERT INTO Project(name,username) VALUES (?,?)",
+                project.getName(),project.getUsername());
+
+        return project;
+
     }
+//        try {
+//            PreparedStatement stm = connection.prepareStatement("INSERT INTO Project (name, username) VALUES (?, ?)", Statement.RETURN_GENERATED_KEYS);
+//            stm.setString(1, project.getName());
+//            stm.setString(2, project.getUsername());
+//            stm.executeUpdate();
+//            ResultSet generatedKeys = stm.getGeneratedKeys();
+//            generatedKeys.next();
+//            project.setId(generatedKeys.getInt(1));
+//            return project;
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
     @Override
     public void update(Project project) {
-        try {
-            PreparedStatement stm = connection.
-                    prepareStatement("UPDATE Project SET name=? AND username =? WHERE id=?");
-            stm.setString(1, project.getName());
-            stm.setString(2, project.getUsername());
-            stm.setInt(3, project.getId());
-            stm.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        jdbc.update(UPDATE Project SET name=? AND username =? WHERE id=?",
+        project.getName(),project.getUsername());
     }
+
+//        try {
+//            PreparedStatement stm = connection.
+//                    prepareStatement("UPDATE Project SET name=? AND username =? WHERE id=?");
+//            stm.setString(1, project.getName());
+//            stm.setString(2, project.getUsername());
+//            stm.setInt(3, project.getId());
+//            stm.executeUpdate();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
     @Override
     public void deleteById(Integer id) {
@@ -61,6 +76,7 @@ public class ProjectDAOImpl implements ProjectDAO {
 
     @Override
     public Optional<Project> findById(Integer id) {
+        jdbc.query();
         try {
             PreparedStatement stm = connection.prepareStatement("SELECT * FROM Project WHERE id=?");
             stm.setInt(1, id);
@@ -78,6 +94,7 @@ public class ProjectDAOImpl implements ProjectDAO {
 
     @Override
     public List<Project> findAll() {
+        return jdbc.query(SELECT * FROM Project WHERE)
         try {
             List<Project> projectList = new ArrayList<>();
             PreparedStatement stm = connection.prepareStatement("SELECT * FROM Project");

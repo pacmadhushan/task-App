@@ -1,10 +1,7 @@
 package lk.ijse.dep9.app;
 
-import lk.ijse.dep9.app.filter.SecuretyFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import javax.servlet.Filter;
 
 @Slf4j
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -26,11 +23,5 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
-    }
-
-    @Override
-    protected Filter[] getServletFilters() {
-        return new Filter[]{new SecuretyFilter()};
-
     }
 }

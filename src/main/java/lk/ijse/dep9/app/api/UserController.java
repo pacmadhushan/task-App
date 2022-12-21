@@ -18,10 +18,10 @@ public class UserController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json")
     public void createUserAccount(@Valid @RequestBody UserDTO user){
-
+        System.out.println(user);
 
     }
-    @PatchMapping("/me")
+    @PatchMapping(value = "/me",consumes = "application/json")
     public void updateUserAccountDetails(){
 
     }

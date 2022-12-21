@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38347684-1481-4e84-957d-b17fe9499e6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/advice/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/advice/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dto/ErrorResponseMsgDTO.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/util/ValidationGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/api/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -172,7 +171,7 @@
       <updated>1671516580267</updated>
       <workItem from="1671516581780" duration="2907000" />
       <workItem from="1671519908307" duration="20067000" />
-      <workItem from="1671586817614" duration="3173000" />
+      <workItem from="1671586817614" duration="3638000" />
     </task>
     <task id="LOCAL-00001" summary="Add spring MVC">
       <created>1671519359725</created>
@@ -272,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671543545598</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Handle validation exceptions smoothly">
+      <created>1671603809488</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671603809488</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +301,7 @@
     <MESSAGE value="Add userDTO" />
     <MESSAGE value="Add hibernate validator" />
     <MESSAGE value="We Handle errors without spring help" />
-    <option name="LAST_COMMIT_MESSAGE" value="We Handle errors without spring help" />
+    <MESSAGE value="Handle validation exceptions smoothly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handle validation exceptions smoothly" />
   </component>
 </project>

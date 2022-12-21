@@ -10,11 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38347684-1481-4e84-957d-b17fe9499e6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/SuperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/ProjectTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/impl/ProjectTaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/WebRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custome/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/DAOFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/DAOTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/ProjectDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/ProjectDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/QueryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/QueryDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/TaskDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/TaskDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/dao/custom/impl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +34,7 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -69,10 +76,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.dep9.app.service.custome.impl" />
+      <recent name="lk.ijse.dep9.app.service.custome" />
       <recent name="lk.ijse.dep9.app.api" />
       <recent name="lk.ijse.dep9.dao.impl" />
       <recent name="lk.ijse.dep9.dao.custom" />
-      <recent name="lk.ijse.dep9.entity" />
     </key>
   </component>
   <component name="RunManager">
@@ -174,7 +182,9 @@
       <updated>1671516580267</updated>
       <workItem from="1671516581780" duration="2907000" />
       <workItem from="1671519908307" duration="20067000" />
-      <workItem from="1671586817614" duration="5489000" />
+      <workItem from="1671586817614" duration="6485000" />
+      <workItem from="1671609229353" duration="2643000" />
+      <workItem from="1671612048606" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="Add spring MVC">
       <created>1671519359725</created>
@@ -302,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671605205681</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add Stratergy services">
+      <created>1671608116610</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671608116610</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +346,7 @@
     <MESSAGE value="Add ValidationGroups" />
     <MESSAGE value="Finalize the UserDTO and Validation" />
     <MESSAGE value="Finalize exposing web services related to users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize exposing web services related to users" />
+    <MESSAGE value="Add Stratergy services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Stratergy services" />
   </component>
 </project>

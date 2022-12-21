@@ -2,19 +2,19 @@ package lk.ijse.dep9.dao.custom.impl;
 
 import lk.ijse.dep9.dao.custom.TaskDAO;
 import lk.ijse.dep9.entity.Task;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Component
 public class TaskDAOImpl implements TaskDAO {
-    private final Connection connection;
 
-
-    public TaskDAOImpl(Connection connection) {
-        this.connection = connection;
-    }
+    @Autowired
+    private Connection connection;
 
     @Override
     public Task save(Task task) {
@@ -65,7 +65,7 @@ public class TaskDAOImpl implements TaskDAO {
             PreparedStatement stm = connection.prepareStatement("SELECT * FROM Task WHERE id=?");
             stm.setInt(1, id);
             ResultSet rst = stm.executeQuery();
-            if (rst.next()){
+            if (rst.next()) {
                 return Optional.of(new Task(rst.getInt("id"),
                         rst.getString("content"),
                         Task.Status.valueOf(rst.getString("status")),
@@ -120,7 +120,7 @@ public class TaskDAOImpl implements TaskDAO {
                     prepareStatement("SELECT * FROM Task WHERE project_id = ?");
             stm.setInt(1, projectId);
             ResultSet rst = stm.executeQuery();
-            while (rst.next()){
+            while (rst.next()) {
                 taskList.add(new Task(rst.getInt("id"),
                         rst.getString("content"),
                         Task.Status.valueOf(rst.getString("status")),

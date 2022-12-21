@@ -28,11 +28,7 @@ public class WebRootConfig {
         jndi.setExpectedType(DataSource.class);
         return jndi;
     }
-    @RequestScope
-    @Bean
-    public Connection connection(DataSource ds) throws SQLException {
-        return DataSourceUtils.getConnection(ds);
-    }
+
     @Bean
     public JdbcTemplate jdbcTemplate(DataSource ds){
         return new JdbcTemplate(ds);

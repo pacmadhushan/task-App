@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38347684-1481-4e84-957d-b17fe9499e6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/util/ValidationGroups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/api/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/dto/UserDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +171,7 @@
       <updated>1671516580267</updated>
       <workItem from="1671516581780" duration="2907000" />
       <workItem from="1671519908307" duration="20067000" />
-      <workItem from="1671586817614" duration="3638000" />
+      <workItem from="1671586817614" duration="3983000" />
     </task>
     <task id="LOCAL-00001" summary="Add spring MVC">
       <created>1671519359725</created>
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671603809488</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add ValidationGroups">
+      <created>1671604189743</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671604189743</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +309,7 @@
     <MESSAGE value="Add hibernate validator" />
     <MESSAGE value="We Handle errors without spring help" />
     <MESSAGE value="Handle validation exceptions smoothly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle validation exceptions smoothly" />
+    <MESSAGE value="Add ValidationGroups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ValidationGroups" />
   </component>
 </project>

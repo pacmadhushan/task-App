@@ -27,12 +27,16 @@ public class UserController {
     public void updateUserAccountDetails(){
 
     }
-    @GetMapping("/me")
-    public void getUserAccountDetails(){
+    @GetMapping(value = "/me",produces ="application/json" )
+    public UserDTO getUserAccountDetails(){
+        System.out.println("getUserAccountDetails");
+        return new UserDTO();
 
     }
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/me")
     public void deleteUserAccountDetails(){
+        System.out.println("deleteUserAccount()");
 
     }
 }

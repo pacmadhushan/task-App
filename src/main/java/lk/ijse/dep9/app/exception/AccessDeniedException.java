@@ -1,8 +1,8 @@
 package lk.ijse.dep9.app.exception;
 
 public class AccessDeniedException extends RuntimeException{
+
     public AccessDeniedException() {
-        super();
     }
 
     public AccessDeniedException(String message) {
@@ -17,7 +17,7 @@ public class AccessDeniedException extends RuntimeException{
         super(cause);
     }
 
-    protected AccessDeniedException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public AccessDeniedException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

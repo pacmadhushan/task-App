@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38347684-1481-4e84-957d-b17fe9499e6f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/exception/AccessDeniedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custom/impl/ProjectTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/service/custom/impl/ProjectTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/util/Transformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/dep9/app/util/Transformer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +175,7 @@
       <workItem from="1671519908307" duration="20067000" />
       <workItem from="1671586817614" duration="6485000" />
       <workItem from="1671609229353" duration="2643000" />
-      <workItem from="1671612048606" duration="24408000" />
+      <workItem from="1671612048606" duration="25263000" />
     </task>
     <task id="LOCAL-00001" summary="Add spring MVC">
       <created>1671519359725</created>
@@ -443,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671698607193</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="impliment entity dto converion for project">
+      <created>1671698941831</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671698941831</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +459,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="We Handle errors without spring help" />
     <MESSAGE value="Handle validation exceptions smoothly" />
     <MESSAGE value="Add ValidationGroups" />
     <MESSAGE value="Finalize the UserDTO and Validation" />
@@ -477,6 +483,7 @@
     <MESSAGE value="Finalize deleteUserAccount web service" />
     <MESSAGE value="add ProjectDTO" />
     <MESSAGE value="Implement ProjectController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement ProjectController" />
+    <MESSAGE value="impliment entity dto converion for project" />
+    <option name="LAST_COMMIT_MESSAGE" value="impliment entity dto converion for project" />
   </component>
 </project>

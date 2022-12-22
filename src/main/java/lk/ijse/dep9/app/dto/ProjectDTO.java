@@ -14,9 +14,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProjectDTO implements Serializable {
-    @Null(groups = ValidationGroups.Create.class,message = "Project id can't be specified")
+    @Null(groups = ValidationGroups.Create.class, message = "Project id can't be specified")
     private Integer id;
-    @NotBlank(message = "project name can't be empty or null")
+    @NotBlank(message = "Project name can't be null or empty")
     @Length(min = 3, message = "Project name should be at least 3 characters long")
     private String name;
+    private String username;
 }

@@ -31,7 +31,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected Filter[] getServletFilters() {
-        DelegatingFilterProxy securityFilter = new DelegatingFilterProxy("securityFilter");
-        return new Filter[]{securityFilter};
+        DelegatingFilterProxy filterProxy = new DelegatingFilterProxy("securityFilter");
+        return new Filter[]{filterProxy};
     }
 }

@@ -38,7 +38,7 @@ public class ProjectDAOImpl implements ProjectDAO {
 
     @Override
     public void update(Project project) {
-        jdbc.update("UPDATE Project SET name=? ,username =? WHERE id=?", project.getName(), project.getUsername(), project.getId());
+        jdbc.update("UPDATE Project SET name=?, username =? WHERE id=?", project.getName(), project.getUsername(), project.getId());
     }
 
     @Override

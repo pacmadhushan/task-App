@@ -23,7 +23,7 @@ public class ProjectController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json", produces = "application/json")
     private ProjectDTO createNewProject(
-            @Validated(ValidationGroups.Create.class)@RequestBody ProjectDTO projectDTO,
+            @Validated(ValidationGroups.Create.class) @RequestBody ProjectDTO projectDTO,
             @RequestAttribute String username){
         projectDTO.setUsername(username);
         return projectTaskService.createNewProject(projectDTO);
